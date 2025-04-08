@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8e1;
+}
+
+.main-content {
+    padding: 40px;
+    text-align: center;
+}
+
+.welcome h1 {
+    font-size: 2.5em;
+    color: #ff5722;
+}
+
+.welcome p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.dynamic-section, .gallery, .reviews {
+    margin: 40px 0;
+}
+
+.dynamic-section h2, .gallery h2, .reviews h2 {
+    font-size: 2em;
+    color: #e65100;
+    margin-bottom: 20px;
+}
+
+.special-item {
+    background-color: #ffe0b2;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.dynamic-data {
+    font-weight: bold;
+    color: #d81b60;
+}
+
+.image-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-grid img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #ff9800;
+}
+
+.review-item {
+    background-color: #fff3e0;
+    padding: 15px;
+    margin: 10px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    border-left: 5px solid #ff5722;
+}
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #3498db;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #3498db, #8e44ad);
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease;
+        }
+
+        .footer {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 40px 20px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto 20px;
+}
+
+.contact-info, .social-links, .hours {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #fff8e1;
+}
+
+.footer p, .footer a {
+    font-size: 1em;
+    color: #fff;
+    margin: 5px 0;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: #ffe0b2;
+}
+
+.footer-bottom {
+    border-top: 1px solid #fff8e1;
+    padding-top: 10px;
+    font-size: 0.9em;
+}
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease 0.3s;
+            animation-fill-mode: both;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background-color: #fff;
+            color: #3498db;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            animation: fadeInUp 1s ease 0.6s;
+            animation-fill-mode: both;
+        }
+
+        .cta-button:hover {
+            background-color: #3498db;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 15px 20px;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-links {
+                gap: 20px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .cta-button {
+                padding: 12px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo" style="font-family: 'Courier New', Courier, monospace;">जिलेबी जंक्शन!</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to जिलेबी जंक्शन</h1>
+            <p style="color: white;">"अण्णा जिलेबीवाले मध्ये गोड आनंदात रमवा!"</p>
+            <a href="#get-started" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+
+    <!-- Middle Section -->
+    <section class="main-content">
+        <div class="welcome">
+            <h1>स्वागत आहे जिलेबी हाऊस मध्ये!</h1>
+            <p>Indulge in the sweetest, crispiest jalebis made fresh every day. A taste of tradition in every swirl!</p>
+        </div>
+
+        <div class="dynamic-section">
+            <h2>आजचा खास (Daily Special)</h2>
+            <div class="special-item">
+                <!-- Dynamic content placeholder -->
+                <p>Today’s Jalebi: <span class="dynamic-data">Saffron Jalebi with Rabdi</span></p>
+                <p>Price: <span class="dynamic-data">₹50/plate</span></p>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <h2>जिलेबीचा आनंद</h2>
+            <div class="image-grid">
+                <img src="https://www.shutterstock.com/image-photo/jalebi-famous-indian-sweet-this-260nw-1692712636.jpg" alt="Fresh Jalebis">
+                <img src="https://media.gettyimages.com/id/824581382/photo/streets-of-karachi.jpg?s=612x612&w=gi&k=20&c=yN3zn1XfAxMGKDECAWxSnRMuVc1p9ovA9QKFMKmuS20=" alt="Syrupy Jalebis">
+                <img src="https://static.vecteezy.com/system/resources/previews/008/260/205/large_2x/jalebi-indian-sweet-food-on-a-plate-photo.jpg" alt="Jalebi Platter">
+            </div>
+        </div>
+
+        <div class="reviews">
+            <h2>ग्राहकांचे मत (Customer Reviews)</h2>
+            <div class="review-item">
+                <!-- Dynamic content placeholder -->
+                <p>"<span class="dynamic-data">अतिशय चविष्ट आणि ताज्या जिलेबी!</span>" - <span class="dynamic-data">Sneha P.</span></p>
+            </div>
+            <div class="review-item">
+                <p>"<span class="dynamic-data">Best jalebis in town!</span>" - <span class="dynamic-data">Rahul K.</span></p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>संपर्क करा (Contact Us)</h3>
+                <p>📍 Jalebi House, 123 Sweet Lane, Pune, Maharashtra</p>
+                <p>📞 +91 899913056</p>
+                <p>✉️ info@jalebi house.com</p>
+            </div>
+            <div class="social-links">
+                <h3>आमच्यासोबत जोडले जा (Connect With Us)</h3>
+                <a href="#">Facebook</a> | 
+                <a href="#">Instagram</a> | 
+                <a href="#">Twitter</a>
+            </div>
+            <div class="hours">
+                <h3>खुलेपणा (Opening Hours)</h3>
+                <p>सोमवार - शनिवार: सकाळी 8 ते रात्री 10</p>
+                <p>रविवार: सकाळी 9 ते दुपारी 3</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Jalebi House. सर्व हक्क राखीव (All Rights Reserved).</p>
+        </div>
+    </footer>
+    </body>
+    </html>
+</body>
+</html>
